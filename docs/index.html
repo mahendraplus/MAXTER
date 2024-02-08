@@ -56,6 +56,23 @@
         .copy-btn:hover {
             background-color: #45a049;
         }
+        .contact-btn {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .contact-btn:hover {
+            background-color: #2980b9;
+        }
         @keyframes colorChange {
             0% { color: #333; }
             50% { color: #4CAF50; }
@@ -85,8 +102,8 @@
 
 <p>Hello, I'm Max (Mahendra Gahelot) from India 🇮🇳, a passionate coder with a flair for creating exceptional terminal environments. With a background in sports and ethical hacking, I've navigated through the tech landscape, collaborating with renowned companies, including Internet service providers. MAXTER is my brainchild, a simple yet potent project designed to enhance my students' terminal experiences.</p>
 
-<h2>GitHub Coder Appreciation 🙌</h2>
-<p>Dive into the vibrant MAXTER community, explore, contribute, and embark on an exciting terminal adventure! 🚀✨</p>
+<p>Contact me for any coding and networking-related queries:</p>
+<button class="contact-btn" onclick="redirectToInstagram()">Contact Me</button>
 
 <script>
     function copyToClipboard(elementId) {
@@ -99,10 +116,15 @@
         window.getSelection().removeAllRanges();
         alert("Command copied to clipboard!");
     }
+
+    function redirectToInstagram() {
+        window.location.href = 'https://instagram.com/m4u.xt';
+    }
 </script>
 
 <footer>
     <p>&copy; 2024 MAXTER by MahendraPlus (Max)</p>
+    <!-- Placeholder for view counters or other information -->
 </footer>
 
 </body>

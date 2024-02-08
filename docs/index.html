@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MAXTER - 🚀 Customizable Terminal Setup</title>
+    <meta name="description" content="MAXTER – Your gateway to a personalized and powerful terminal experience on Termux. Install MAXTER for stunning terminal themes. Join the vibrant MAXTER community for an exciting terminal adventure!">
+    <title>MAXTER v1.2</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -13,8 +14,9 @@
             line-height: 1.6;
             margin: 0;
         }
-        h1, h2 {
+        h1 {
             color: #333;
+            animation: colorChange 3s infinite;
         }
         p {
             color: #555;
@@ -54,11 +56,16 @@
         .copy-btn:hover {
             background-color: #45a049;
         }
+        @keyframes colorChange {
+            0% { color: #333; }
+            50% { color: #4CAF50; }
+            100% { color: #333; }
+        }
     </style>
 </head>
 <body>
 
-<h1>MAXTER - 🚀 Customizable Terminal Setup</h1>
+<h1>MAXTER</h1>
 
 <p>MAXTER is your gateway to a personalized and powerful terminal experience on Termux! 🐚 Inspired by fish shell and tailored for zsh, MAXTER offers a swift setup for stunning terminal themes.</p>
 
@@ -79,9 +86,6 @@
 <p>Hello, I'm Max (Mahendra Gahelot) from India 🇮🇳, a passionate coder with a flair for creating exceptional terminal environments. With a background in sports and ethical hacking, I've navigated through the tech landscape, collaborating with renowned companies, including Internet service providers. MAXTER is my brainchild, a simple yet potent project designed to enhance my students' terminal experiences.</p>
 
 <h2>GitHub Coder Appreciation 🙌</h2>
-
-<p>Kudos to the amazing GitHub coder, [GitHub Coder](https://github.com/github-coder) 🌟! Their brilliance and contributions have significantly influenced and shaped MAXTER.</p>
-
 <p>Dive into the vibrant MAXTER community, explore, contribute, and embark on an exciting terminal adventure! 🚀✨</p>
 
 <script>
@@ -96,6 +100,10 @@
         alert("Command copied to clipboard!");
     }
 </script>
+
+<footer>
+    <p>&copy; 2024 MAXTER by MahendraPlus (Max)</p>
+</footer>
 
 </body>
 </html>

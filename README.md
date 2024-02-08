@@ -10,6 +10,12 @@ To install MAXTER on your Termux, run:
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/mahendraplus/MAXTER/Max/install.sh)"
 
 ```
+# Screenshot 
+<p align="center">
+  <img width="140" height="140" src="Maxterm.jpg">
+</p>
+
+<h3 align="center"> MaxTer V1.0</h3>
 ## About the Author
 
 Hello, I'm Max (Mahendra) 👋, a passionate coder with a flair for creating exceptional terminal environments. With a background in sports and ethical hacking, I've navigated through the tech landscape, collaborating with renowned companies, including Internet service providers. MAXTER is my brainchild, a simple yet potent project designed to enhance my students' terminal experiences.

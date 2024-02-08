@@ -1,4 +1,4 @@
-# MAXTER - 🚀 Customizable Terminal Setup
+# MAXTER - 🚀 For Termux 
 
 MAXTER is your doorway to a personalized and powerful terminal experience on Termux! 🐚 Inspired by fish shell and crafted for zsh, MAXTER offers a swift setup for stunning terminal themes.
 

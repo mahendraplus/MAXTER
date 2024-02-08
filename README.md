@@ -6,7 +6,7 @@ MAXTER is your doorway to a personalized and powerful terminal experience on Ter
 
 To install MAXTER on your Termux, run:
 
-```
+```bash
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/mahendraplus/MAXTER/Max/install.sh)"
 
 ```

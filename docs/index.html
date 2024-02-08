@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MAXTER - Customizable Terminal Setup</title>
+    <title>MAXTER - 🚀 Customizable Terminal Setup</title>
     <style>
-        /* Add any custom styling here */
         body {
             font-family: 'Arial', sans-serif;
             background-color: #f4f4f4;
             text-align: center;
             padding: 20px;
             line-height: 1.6;
+            margin: 0;
         }
         h1, h2 {
             color: #333;
@@ -26,6 +26,34 @@
             border: 1px solid #ddd;
             border-radius: 5px;
         }
+        pre {
+            background-color: #272822;
+            color: #f8f8f2;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+            text-align: left;
+        }
+        code {
+            color: #f8f8f2;
+        }
+        .copy-btn {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .copy-btn:hover {
+            background-color: #45a049;
+        }
     </style>
 </head>
 <body>
@@ -38,7 +66,9 @@
 
 <p>To install MAXTER on your Termux, run the following command:</p>
 
-<pre><code>sh -c "$(curl -fsSL https://raw.githubusercontent.com/mahendraplus/MAXTER/Max/install.sh)"</code></pre>
+<pre><code id="install-command">sh -c "$(curl -fsSL https://raw.githubusercontent.com/mahendraplus/MAXTER/Max/install.sh)"</code></pre>
+
+<button class="copy-btn" onclick="copyToClipboard('#install-command')">Copy Command</button>
 
 <h2>Demo</h2>
 
@@ -46,13 +76,26 @@
 
 <h2>About the Author</h2>
 
-<p>Hello, I'm Max ( Mahendra Gahelot ) 👋, a passionate coder with a flair for creating exceptional terminal environments. With a background in sports and ethical hacking, I've navigated through the tech landscape, collaborating with renowned companies, including Internet service providers. MAXTER is my brainchild, a simple yet potent project designed to enhance my students' terminal experiences.</p>
+<p>Hello, I'm Max (Mahendra Gahelot) from India 🇮🇳, a passionate coder with a flair for creating exceptional terminal environments. With a background in sports and ethical hacking, I've navigated through the tech landscape, collaborating with renowned companies, including Internet service providers. MAXTER is my brainchild, a simple yet potent project designed to enhance my students' terminal experiences.</p>
 
 <h2>GitHub Coder Appreciation 🙌</h2>
 
 <p>Kudos to the amazing GitHub coder, [GitHub Coder](https://github.com/github-coder) 🌟! Their brilliance and contributions have significantly influenced and shaped MAXTER.</p>
 
 <p>Dive into the vibrant MAXTER community, explore, contribute, and embark on an exciting terminal adventure! 🚀✨</p>
+
+<script>
+    function copyToClipboard(elementId) {
+        var copyText = document.querySelector(elementId);
+        var range = document.createRange();
+        range.selectNode(copyText);
+        window.getSelection().removeAllRanges();
+        window.getSelection().addRange(range);
+        document.execCommand("copy");
+        window.getSelection().removeAllRanges();
+        alert("Command copied to clipboard!");
+    }
+</script>
 
 </body>
 </html>

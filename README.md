@@ -12,7 +12,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/mahendraplus/MAXTER/Max/in
 ```
 # Screenshot 
 <p align="center">
-  <img width="140" height="140" src="Maxterm.png">
+  <img width="" height="" src="Maxterm.png">
 </p>
 
 <h3 align="center"> MaxTer V1.0</h3>
